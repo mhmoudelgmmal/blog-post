@@ -1,3 +1,7 @@
+<app-loading [load]="load"></app-loading>
+@if (message.text != "") {
+  <app-toaster (reloadClick)="onRloadClick()"></app-toaster>
+}
 <div class="container">
 <!-- start header -->
 <header class="heading text-center d-flex align-items-center">
@@ -8,4 +12,11 @@
 </header>
 <!-- end header -->
 
+<!-- start cards section -->
+
+<div class="cards">
+  <app-card></app-card>
+</div>
+
+<!-- end cards section -->
 </div>
