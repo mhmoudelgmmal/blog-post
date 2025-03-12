@@ -1,0 +1,11 @@
+@mixin prifixer($property,$value,$prifixes:()){
+  @each $prifix in $prifixes {
+      #{"-"+$prifix+"-"+$property}:$value
+  }
+  #{ $property}:$value
+}
+@mixin mediaQueryScreens($Width){
+  @media #{$Width} {
+      @content;
+  }
+}

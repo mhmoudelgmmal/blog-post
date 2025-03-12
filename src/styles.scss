@@ -1,1 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: 'Inter', sans-serif;
+  background-image: url('../public/Background-pattern.png');
+  background-size: cover;
+  background-position: center top;
+
+}
+.container {
+  width: 90%;
+  max-width: 1280px;
+  height: 90%;
+  margin: 5% auto;
+}
+.d-flex{
+  display: flex !important;
+}
+.justify-content-center{
+  justify-content: center !important;
+}
+.align-items-center{
+  align-items: center !important;
+}
+.w-100{
+  width: 100% !important;
+}
+.text-center{
+  text-align: center !important;
+}
+.position-relative{
+  position: relative !important;
+}
