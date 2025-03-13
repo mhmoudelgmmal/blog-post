@@ -8,11 +8,11 @@
   flex-direction: column;
   align-items: flex-end;
   border: 1px solid $textDanger;
-  border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
+  border-radius: 5px;
 }
 
 
@@ -23,43 +23,43 @@
   padding: 15px 20px;
   border-radius: 5px;
   opacity: 0;
-  animation: showToast 3s forwards;
   -webkit-animation: showToast 3s forwards;
+  animation: showToast 3s forwards;
 }
 
 
 @keyframes showToast {
   0% {
     opacity: 0;
-    transform: translateY(-50px);
     -webkit-transform: translateY(-50px);
     -moz-transform: translateY(-50px);
     -ms-transform: translateY(-50px);
     -o-transform: translateY(-50px);
+    transform: translateY(-50px);
 }
   10% {
     opacity: 1;
-    transform: translateY(0);
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
     -o-transform: translateY(0);
+    transform: translateY(0);
 }
   80% {
     opacity: 1;
-    transform: translateY(0);
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
     -o-transform: translateY(0);
+    transform: translateY(0);
 }
   100% {
     opacity: 1;
-    transform: translateY(0);
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
     -o-transform: translateY(0);
+    transform: translateY(0);
 }
 }
 .reloadButton{
