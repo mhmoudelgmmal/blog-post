@@ -1,4 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   height: 100vh;
@@ -6,7 +9,8 @@ body {
   background-image: url('../public/Background-pattern.png');
   background-size: cover;
   background-position: center top;
-
+  background-repeat: no-repeat;
+  overflow-x: hidden;
 }
 .container {
   width: 90%;
@@ -19,6 +23,9 @@ body {
 }
 .justify-content-center{
   justify-content: center !important;
+}
+.justify-content-between{
+  justify-content: space-between !important;
 }
 .align-items-center{
   align-items: center !important;

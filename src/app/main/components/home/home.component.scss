@@ -1,6 +1,4 @@
-@use '../../../assets/styles/variables.scss' as *;
-@use '../../../assets/styles/mixins.scss' as *;
-// @import '../../../styles.scss';
+@use '../../../../assets/styles/variables.scss' as *;
 
 .heading{
   flex-direction: column;
@@ -33,4 +31,10 @@
     font-size: 20px;
     line-height: 30px;
   }
+}
+.cards{
+  max-width: 100%;
+  flex-wrap: wrap;
+  margin-left:10px ;
+
 }

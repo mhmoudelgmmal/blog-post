@@ -1,1 +1,27 @@
-<p>card works!</p>
+<div class="card d-flex justify-content-center align-items-center">
+  <div class="cardImg">
+    <img [src]="article.cover_image" alt="">
+  </div>
+  <div class="cardBody">
+
+    <h5 class="cardSmallHeading">{{article.type_of}}</h5>
+    <div class="carBigHeadingAndArrow d-flex justify-content-between align-items-center">
+      <h1 class="cardBigHeading">{{article.title}}</h1>
+      <div class="arrow">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M7 17L17 7M17 7H7M17 7V17" stroke="#101828" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+      </div>
+    </div>
+    <p class="cardParagraph">{{article.description}}</p>
+    <div class="userDetails d-flex justify-content-between">
+      <div class="userimg">
+        <img [src]="article.user.profile_image"alt="">
+      </div>
+      <div class="userData d-flex">
+        <p class="userName">{{article.user.name}}</p>
+        <p class="postDate">{{article.edited_at| date: 'shortDate' }}</p>
+      </div>
+    </div>
+  </div>
+</div>

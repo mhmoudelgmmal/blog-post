@@ -13,10 +13,15 @@
 <!-- end header -->
 
 <!-- start cards section -->
-
-<div class="cards">
-  <app-card></app-card>
-</div>
+@if (articles.length > 0) {
+  <div class="cards d-flex justify-content-between">
+    @for(article of articles; track $index) {
+    <div class="card">
+      <app-card [article]="article"></app-card>
+    </div>
+  }
+  </div>
+}
 
 <!-- end cards section -->
 </div>

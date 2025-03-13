@@ -1,0 +1,100 @@
+@use '../../../assets/styles/variables' as * ;
+.card{
+  flex-wrap: wrap;
+  margin: 60px 15px 15px 15px;
+  width: 384px;
+  flex-direction: column;
+  padding: 24px 12px;
+  background-color: white;
+  box-shadow: 0px 4px 6px -2px #10182808;
+
+  box-shadow: 0px 12px 16px -4px #10182814;
+
+  .cardImg{
+    width: 336px;
+    height: 240px;
+    margin-bottom: 12px;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .cardBody{
+    width: 336px;
+
+    .cardSmallHeading{
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 20px;
+      color: $ourBlogColor;
+      margin-bottom: 5px;
+    }
+    .carBigHeadingAndArrow{
+      height: 65px;
+      .cardBigHeading{
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 32px;
+        color: $blackColor;
+      }
+      .arrow{
+        cursor: pointer;
+        svg{
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+    .cardParagraph{
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: $paragraphCard;
+      margin-top: 3px;
+      margin-bottom: 20px;
+    }
+    .userDetails{
+      width: 65%;
+      text-align: left;
+      .userimg{
+        width: 25%;
+        height: 40px;
+        img{
+          width: 100%;
+          height:100%;
+          border: 1px solid transparent;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          -o-border-radius: 50%;
+          border-radius: 50%;
+        }
+  }
+      .userData{
+        width: 75%;
+        flex-direction: column;
+        margin-left: 5px;
+        .userName{
+          margin: 0 0 5px 0;
+          color: $blackColor;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 20px;
+
+        }
+        .postDate{
+          margin: 0;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 20px;
+          color: $paragraphCard;
+        }
+      }
+    }
+  }
+}
+// @media screen and (max-width: 375px) {
+//   .card{
+//     width: 343px;
+//   }
+// }
